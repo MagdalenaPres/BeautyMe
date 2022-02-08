@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.13"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp">
+
+        <ImageView
+            android:id="@+id/imageFavorites"
+            android:layout_width="93dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_baseline_favorite_24"
+            android:contentDescription="heart_icon" />
+
+        <TextView
+            android:id="@+id/txt_favorite"
+            android:layout_width="235dp"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Favorite products"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/favorite_items"
+        android:clipToPadding="false"
+        android:layout_marginHorizontal="20dp"
+        android:layout_weight="0.7"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/border"
+        tools:listitem="@layout/product_in_favorites"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:orientation="vertical"
+        android:paddingTop="40dp">
+
+        <TextView
+            android:id="@+id/sum"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="You may also like:"
+            android:layout_marginStart="20dp" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/other_items"
+        android:clipToPadding="false"
+        android:layout_weight="0.4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        tools:listitem="@layout/other_products"/>
+
+</LinearLayout>

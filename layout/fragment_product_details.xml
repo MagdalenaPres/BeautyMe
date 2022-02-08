@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.ProductDetails_fragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/back_sign"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="8dp"
+            app:srcCompat="@drawable/ic_baseline_arrow_back_24"/>
+
+        <ImageView
+            android:id="@+id/menu_sign"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="300dp"
+            app:srcCompat="@drawable/ic_baseline_menu_24" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/main_img"
+        android:layout_width="200dp"
+        android:layout_height="230dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"/>
+
+    <TextView
+        android:id="@+id/name_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:textColor="#2B2828"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/prod_type_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:textColor="#2B2828" />
+
+    <TextView
+        android:id="@+id/price_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:textColor="#2B2828" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:id="@+id/imageButton"
+            android:layout_width="93dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_baseline_shopping_cart_24"
+            android:layout_gravity="center"/>
+
+        <Button
+            style="@style/Widget.MaterialComponents.Button"
+            android:id="@+id/cart_button"
+            android:layout_width="235dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Add to cart"
+            android:textAlignment="center"
+            app:cornerRadius="20dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:id="@+id/imageButton2"
+            android:layout_width="95dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_baseline_favorite_24" />
+
+        <Button
+            style="@style/Widget.MaterialComponents.Button"
+            android:id="@+id/favorites_button"
+            android:layout_width="235dp"
+            android:layout_height="wrap_content"
+            android:text="Add to favorites"
+            android:textAlignment="center"
+            app:cornerRadius="20dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/description_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:textColor="#2B2828"
+        android:layout_marginTop="30dp"
+        android:paddingHorizontal="25dp"
+        android:scrollbars = "vertical"/>
+</LinearLayout>

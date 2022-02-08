@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.Account_fragment"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="30dp">
+
+        <ImageView
+            android:id="@+id/iconAccount"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/ic_baseline_perm_identity_24"
+            android:contentDescription="account" />
+
+        <TextView
+            android:id="@+id/txt_account"
+            android:layout_width="235dp"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="Account"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/image_top_account"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="380dp"
+        android:orientation="vertical"
+        android:paddingTop="30dp">
+
+        <Button
+            android:id="@+id/addprod_button"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="235dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginVertical="10dp"
+            android:text="Add new product"
+            android:textAlignment="center"
+            app:cornerRadius="20dp" />
+
+        <Button
+            android:id="@+id/password_button"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="235dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginVertical="10dp"
+            android:text="Change password"
+            android:textAlignment="center"
+            app:cornerRadius="20dp" />
+
+        <Button
+            android:id="@+id/notifications_button"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="235dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginVertical="10dp"
+            android:text="Manage notifications"
+            android:textAlignment="center"
+            app:cornerRadius="20dp" />
+
+        <Button
+            android:id="@+id/help_button"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="235dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginVertical="10dp"
+            android:text="Customer service"
+            android:textAlignment="center"
+            app:cornerRadius="20dp" />
+
+        <Button
+            android:id="@+id/language_button"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="235dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginVertical="10dp"
+            android:text="Change language"
+            android:textAlignment="center"
+            app:cornerRadius="20dp" />
+    </LinearLayout>
+
+</LinearLayout>
